@@ -6,7 +6,7 @@
     background-color: red;
 }
 
-main.ul {
+ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -14,11 +14,11 @@ main.ul {
     background-color: #333;
 }
 
-main.li {
+li {
     float: left;
 }
 
-main.li a {
+li a {
     display: block;
     color: white;
     text-align: center;
@@ -27,19 +27,29 @@ main.li a {
 }
 
 /* Change the link color to #111 (black) on hover */
-main.li a:hover {
+li a:hover {
     background-color: #111;
 }
 
-sublist {
-{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 25%;
-    background-color: #f1f1f1;
-    height: 100%; /* Full height */
-    position: fixed; /* Make it stick, even on scroll */
-    overflow: auto; /* Enable scrolling if the sidenav has too much content */
+
+
+/* Button group for the sub menus*/
+
+.btn-group button {
+    background-color: #4CAF50; /* Green background */
+    border: 1px solid green; /* Green border */
+    color: white; /* White text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    width: 50%; /* Set a width if needed */
+    display: block; /* Make the buttons appear below each other */
 }
-}
+
+    .btn-group button:not(:last-child) {
+        border-bottom: none; /* Prevent double borders */
+    }
+
+    /* Add a background color on hover */
+    .btn-group button:hover {
+        background-color: #3e8e41;
+    }

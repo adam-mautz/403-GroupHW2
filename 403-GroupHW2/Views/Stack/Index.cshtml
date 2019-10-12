@@ -14,14 +14,21 @@
 <body>
     <div class="subList">
         <ul>
-            <li><a href="#">Add one time to stack</a> </li>
+            <li typeof="button"></li>
+            <li><a href="@Url.Action("AddOne", "Stack")">Add one time to stack</a> </li>
             <li><a href="#">Add Huge List of Items to Stack</a></li>
-            <li><a href="#">Display Stack</a></li>
+            <li><a href="@Url.Action("Display", "Stack")">Display Stack</a></li>
             <li><a href="#">Delete from Stack</a></li>
             <li><a href="#">Clear Stack</a></li>
             <li><a href="#">Search Stack</a></li>
             <li><a href="#">Return to Main Menu</a></li>
         </ul>
     </div>
+    <div>
+        @Html.Raw((String)ViewBag.Output)
+        Hello my baby
+    </div>
+</body>
+</html>
 </body>
 </html>
