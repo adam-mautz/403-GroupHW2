@@ -6,7 +6,7 @@
     background-color: red;
 }
 
-ul {
+main.ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -14,11 +14,11 @@ ul {
     background-color: #333;
 }
 
-li {
+main.li {
     float: left;
 }
 
-li a {
+main.li a {
     display: block;
     color: white;
     text-align: center;
@@ -27,6 +27,19 @@ li a {
 }
 
 /* Change the link color to #111 (black) on hover */
-li a:hover {
+main.li a:hover {
     background-color: #111;
+}
+
+sublist {
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: #f1f1f1;
+    height: 100%; /* Full height */
+    position: fixed; /* Make it stick, even on scroll */
+    overflow: auto; /* Enable scrolling if the sidenav has too much content */
+}
 }
